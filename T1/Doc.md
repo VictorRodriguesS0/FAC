@@ -6,11 +6,11 @@
 
 ## Softwares Utilizados
 
+- Armazenamento e controle de versão no [repositório GitHub](https://github.com/VictorRodriguesS0/FAC)
 - Sistema Operacional Utilizado: Sistema Operacional [Linux Ubuntu 16.04](https://www.ubuntu.com/download)
 - Software Utilizado para Documentação: [Visual Studio Code](https://code.visualstudio.com/) em MarkDown
 - Software Utilizado para Implementação: [MARS 4.5](http://courses.missouristate.edu/KenVollmar/mars/)
 - Software Utilizado para Testes com `main`:  [QtSpim](http://spimsimulator.sourceforge.net/)
-
 
 ## Entradas e Saídas
 

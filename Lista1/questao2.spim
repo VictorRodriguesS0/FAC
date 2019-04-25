@@ -1,0 +1,36 @@
+.text
+	li $v0, 5	#
+	move $t1, $v0	# Le o numero que será decrementado até 0
+	syscall		#
+	
+	
+	bgtz  $t1, decrementa	#Se o numero for maior que zero, entra na branch
+	
+	
+	li $v0, 1	#chama o comando de imprimir inteiro
+	move $a0, $t3	#move o t3 para a0, que é de onde o print le o numero
+	syscall
+	
+	li $v0, 10
+	syscall
+	
+
+decrementa:
+	sub $t1, $t1, 1	#Decrementa o t1 em -1
+	b input
+	
+input:
+	li $v0, 5	#chama a o input de inteiros
+	move $t2, $v0	#coloca o valor lido em t2
+	syscall
+	b soma		#chama a branch de soma
+
+soma:
+	add $t3, $t2, $t2	#Soma todos os numeros gerados no input
+	
+	li $v0, 1	#chama o comando de imprimir inteiro
+	move $a0, $t2	#move o t3 para a0, que é de onde o print le o numero
+	syscall
+	
+	b decrementa
+	
